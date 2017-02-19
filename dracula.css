@@ -12,7 +12,7 @@
  * @author Zeno Rocha <hi@zenorocha.com>
  */
 
- .highlight .hll { background-color: #ffffcc }
+ .highlight .hll { background-color: #f1fa8c }
  .highlight  { background: #282a36; color: #f8f8f2 }
  .highlight .c { color: #6272a4 } /* Comment */
  .highlight .err { color: #f8f8f2 } /* Error */
@@ -34,7 +34,7 @@
  .highlight .gr { color: #f8f8f2 } /* Generic.Error */
  .highlight .gh { color: #f8f8f2; font-weight: bold } /* Generic.Heading */
  .highlight .gi { color: #f8f8f2; font-weight: bold } /* Generic.Inserted */
- .highlight .go { color: #525563 } /* Generic.Output */
+ .highlight .go { color: #44475a } /* Generic.Output */
  .highlight .gp { color: #f8f8f2 } /* Generic.Prompt */
  .highlight .gs { color: #f8f8f2 } /* Generic.Strong */
  .highlight .gu { color: #f8f8f2; font-weight: bold } /* Generic.Subheading */
