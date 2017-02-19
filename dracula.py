@@ -38,7 +38,7 @@ class DraculaStyle(Style):
         Generic.Error: "#f8f8f2",
         Generic.Heading: "#f8f8f2 bold",
         Generic.Inserted: "#f8f8f2 bold",
-        Generic.Output: "#525563",
+        Generic.Output: "#44475a",
         Generic.Prompt: "#f8f8f2",
         Generic.Strong: "#f8f8f2",
         Generic.Subheading: "#f8f8f2 bold",
