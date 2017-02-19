@@ -13,80 +13,155 @@
  * @author Piruin Panichphol <piruin.p@gmail.com>
  */
 
-$very-dark-gray: #282a36; // Background
-$dark-gray: #44475a; // Current Line & Selection
-$very-light-gray: #f8f8f2; // Foreground
-$blue: #6272a4; // Comment
-$cyan: #8be9fd;
-$green: #50fa7b;
-$orange: #ffb86c;
-$pink: #ff79c6;
-$purple: #bd93f9;
-$red: #ff5555;
-$dark-red: #8b080b;
-$yellow: #f1fa8c;
+/*
+ * Variables
+ */
+
+$dt-gray-dark: #282a36;  // Background
+$dt-gray: #44475a;       // Current Line & Selection
+$dt-gray-light: #f8f8f2; // Foreground
+$dt-blue: #6272a4;       // Comment
+$dt-cyan: #8be9fd;
+$dt-green: #50fa7b;
+$dt-orange: #ffb86c;
+$dt-pink: #ff79c6;
+$dt-purple: #bd93f9;
+$dt-red: #ff5555;
+$dt-yellow: #f1fa8c;
+
+/*
+ * Styles
+ */
 
 .highlight {
-  background: $very-dark-gray;
-  color: $very-light-gray;
+  background: $dt-gray-dark;
+  color: $dt-gray-light;
 
-  .hll {
-    background-color: $yellow;
+  .hll,
+  .s,
+  .sa,
+  .sb,
+  .sc,
+  .dl,
+  .sd,
+  .s2,
+  .se,
+  .sh,
+  .si,
+  .sx,
+  .sr,
+  .s1,
+  .ss {
+    color: $dt-yellow;
   }
+
   .go {
-    color: $dark-gray;
+    color: $dt-gray;
   }
 
-  .err, .g, .l, .n, .x, .p, .gr, .gp, .gs, .gt, .no,
-  .nd, .ni, .ne, .nn, .nx, .py, .ld, .w,  {
-    color: $very-light-gray;
+  .err,
+  .g,
+  .l,
+  .n,
+  .x,
+  .p,
+  .ge,
+  .gr,
+  .gh,
+  .gi,
+  .gp,
+  .gs,
+  .gu,
+  .gt,
+  .ld,
+  .no,
+  .nd,
+  .ni,
+  .ne,
+  .nn,
+  .nx,
+  .py,
+  .w,
+  .bp {
+    color: $dt-gray-light;
   }
 
-  .gh, .gi, .gu {
-    color: $very-light-gray;
+  .gh,
+  .gi,
+  .gu {
     font-weight: bold;
   }
 
   .ge {
-     color: $very-light-gray;
-     text-decoration: underline;
-   }
-
-   .bp {
-      color: $very-light-gray;
-      font-style: italic;
-    }
-
-  .c, .ch, .cm, .cpf, .c1, .cs {
-     color: $blue;
-   }
-
-   .kt {
-     color: $cyan;
-   }
-
-  .kd, .nb, .vc, .vg, .vi, .vm, .nl, .nv {
-     color: $cyan;
-     font-style: italic;
-   }
-
-  .na, .nc, .nf, .fm {
-     color: $green;
+    text-decoration: underline;
   }
 
-  .k, .o, .cp, .kc, .kn, .kp, .kr, .nt, .ow {
-     color: $pink;
-   }
+  .bp {
+    font-style: italic;
+  }
 
-  .mb, .mf, .mh, .mi, .il, .mo, .m {
-     color: $purple;
-   }
+  .c,
+  .ch,
+  .cm,
+  .cpf,
+  .c1,
+  .cs {
+    color: $dt-blue;
+  }
+
+  .kd,
+  .kt,
+  .nb,
+  .nl,
+  .nv,
+  .vc,
+  .vg,
+  .vi,
+  .vm {
+    color: $dt-cyan;
+  }
+
+  .kd,
+  .nb,
+  .nl,
+  .nv,
+  .vc,
+  .vg,
+  .vi,
+  .vm {
+    font-style: italic;
+  }
+
+  .na,
+  .nc,
+  .nf,
+  .fm {
+    color: $dt-green;
+  }
+
+  .k,
+  .o,
+  .cp,
+  .kc,
+  .kn,
+  .kp,
+  .kr,
+  .nt,
+  .ow {
+    color: $dt-pink;
+  }
+
+  .m,
+  .mb,
+  .mf,
+  .mh,
+  .mi,
+  .mo,
+  .il {
+    color: $dt-purple;
+  }
 
   .gd {
-     color: $dark-red;
-   }
-
-  .ss, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .s {
-     color: $yellow;
-   }
+    color: $dt-red;
+  }
 }
