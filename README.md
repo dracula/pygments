@@ -2,7 +2,7 @@
 
 > A dark theme for [Pygments](http://pygments.org).
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/pygments.png)
+![Screenshot](./screenshot.png)
 
 ## Install
 
