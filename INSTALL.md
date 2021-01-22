@@ -21,7 +21,7 @@ You can generate the CSS stylesheet (also included in this repository) by using 
     pip install Pygments
     ```
 
-    Which will return a message:
+    Which will return:
 
     ```
     Requirement already satisfied: Pygments in /path/to/pygments
