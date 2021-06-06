@@ -34,7 +34,33 @@ You can generate the CSS stylesheet (also included in this repository) by using 
 
 3.  Copy `dracula.py` into the `styles` folder.
 
-
 4.  Run the following command on your terminal:
 
     `pygmentize -S dracula -f html > dracula.css`
+
+#### Activating theme in iPython
+
+To use with iPython:
+
+1. Run iPython on your Terminal of choice.
+
+   `ipython`
+
+2. To create the blank configuration files, run:
+
+   ```
+   ipython profile create [profilename]
+   ```
+
+   If you leave out the profile name, the files will be created for the `default` profile. These will typically be located in `~/.ipython/profile_default/`, and will be named `ipython_config.py`.
+
+3. Open `ipython_config.py` file and append the following:
+
+   ```python
+   c = get_config()
+
+   c.TerminalInteractiveShell.highlighting_style = "dracula"
+   c.TerminalInteractiveShell.true_color = True
+   ```
+
+![](ipython.png)
