@@ -57,10 +57,14 @@ To use with iPython:
 3. Open `ipython_config.py` file and append the following:
 
    ```python
-   c = get_config()
+   from copy import deepcopy
+   from IPython.utils.PyColorize import linux_theme, theme_table
 
-   c.TerminalInteractiveShell.highlighting_style = "dracula"
-   c.TerminalInteractiveShell.true_color = True
+   dracula = deepcopy(linux_theme)
+   dracula.base = "dracula"
+   theme_table["dracula"] = dracula
+
+   c.TerminalInteractiveShell.colors = "dracula"
    ```
 
 ![](ipython.png)
